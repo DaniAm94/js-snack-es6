@@ -36,19 +36,12 @@ console.log('Peso minimo (secondo metodo):', minimum);
 // Per trovare la prima bici dal peso minimo uso un find
 // Mi restituisce l'elemento che rispetta la condizione booleana da me imposta
 // ovvero weight deve essere uguale a min
-const lightestBike = bikes.find(({ weight }) => weight === min);
-console.log('La prima bicicletta più leggera:', lightestBike);
+const lightestBike1 = bikes.find(({ weight }) => weight === min);
+console.log('La prima bicicletta più leggera:', lightestBike1);
 
 // Se ci fosse più di una bici con peso = al minimo
 // Uso il metodo filter per filtrare tutti gli elementi con weight = al min
 const lightestBikes = bikes.filter(({ weight }) => weight === min);
 console.log('Lista bici più leggere: ', lightestBikes);
-
-
-// Soluzione con reduce (Solo una bici con peso minimo)
-const lightestBike1 = bikes.reduce((currentLightestBike, currentBike) => {
-    return currentBike.weight < currentLightestBike.weight ? currentBike : currentLightestBike;
-}, bikes[0]);
-console.log(lightestBike1);
 
 
