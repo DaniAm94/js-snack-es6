@@ -18,13 +18,14 @@ let min = 50;
 let minimum = bikes[0].weight;
 // Per determinare il peso più basso delle bici presenti nell'array
 // Uso un for each che ha ogni giro confronta min con il parametro weight e lo aggiorna se necessario
+// Potrei usare il minimum ma il primo giro sull'array sarebbe inutile
 bikes.forEach(({ weight }) => {
     if (weight < min) min = weight;
 });
 console.log('Peso minimo (primo metodo):', min);
 
 // Usando minimum che già contiene il peso della prima bici
-// uso un ciclio for partendo dal secondo elemento di bikes
+// uso un ciclo for partendo dal secondo elemento di bikes
 for (let i = 1; i < bikes.length; i++) {
     const { weight } = bikes[i];
     if (weight < minimum) minimum = weight;
