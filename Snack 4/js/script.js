@@ -11,10 +11,11 @@ let footballTeamsPreSeason = [
     { name: "Torino", points: 0, foulsDrawn: 0 }
 ];
 
-const footballTeams = footballTeamsPreSeason.map(({ name }) => {
+const footballTeams = footballTeamsPreSeason.map((teamPreSeason) => {
     // Devo creare un nuovo oggetto da pushare nel nuovo array altrimenti modificherei l'array iniziale
-    const footballTeam = {};
-    footballTeam.name = name;
+    // Clono l'array iniziiale attraverso lo spread operator
+    const footballTeam = { ...teamPreSeason };
+    //Riassegno punti e falli subiti
     // i punti saranno un numero casuale da 5 a 20
     footballTeam.points = Math.floor(Math.random() * (20 - 5) + 1) + 5;
     // i falli subiti saranno un numero casuale da 0 a 10
@@ -23,3 +24,9 @@ const footballTeams = footballTeamsPreSeason.map(({ name }) => {
 });
 console.log('Lista squadre prima della stagione: ', footballTeamsPreSeason);
 console.log('Lista squadre a fine stagione: ', footballTeams);
+
+const foulsGotPerTeam = footballTeams.map(({ name, foulsDrawn }) => {
+    const team = { name: name, foulsDrawn: foulsDrawn }
+    return team;
+});
+console.log('Lista con nomi squdre e falli subiti:', foulsGotPerTeam);
