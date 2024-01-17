@@ -13,12 +13,5 @@ const guests = [
 ];
 
 
-const guestsList = guests.map((Element, index) => {
-    const guest = {
-        table: tableName,
-        guestName: Element,
-        seat: index + 1,
-    };
-    return guest;
-});
+const guestsList = guests.map((Element, index) => ({ table: tableName, guestName: Element, seat: index + 1 }));
 console.log(guestsList);

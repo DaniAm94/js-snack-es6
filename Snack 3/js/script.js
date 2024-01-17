@@ -1,0 +1,1 @@
+console.log('JS 3 OK!');

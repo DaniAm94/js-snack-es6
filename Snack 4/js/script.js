@@ -1,0 +1,1 @@
+console.log('JS 4 OK!');

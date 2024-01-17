@@ -46,5 +46,5 @@ const studentsSubList = students.filter(({ id, grades }) => id > 120 && grades >
 console.log('Studenti con somma dei voti superiore a 70 e id superiore a 120: ', studentsSubList);
 
 // Array con tutti i nomi degli studenti in maiuscolo
-const studentsNamesToUp = students.map(({ name }) => name.toUpperCase());
-console.log('Lista dei nomi in upper case:', studentsNamesToUp);
+const plates = students.map(({ name }) => name.toUpperCase());
+console.log('Lista delle targhe:', plates);

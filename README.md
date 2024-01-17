@@ -39,3 +39,17 @@
     - 196|Luigi Grimaldello|68
     - 102|Piero della Francesca|50
     - 120|Francesca da Polenta|84
+
+### SNACK 3
+    1. Creare un array di oggetti:
+    2. Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: 
+        - marca
+        - peso
+    3. Stampare in console la bici con peso minore utilizzando il destructuring
+    
+### SNACK 4
+    1. Creare un array di oggetti di squadre di calcio.
+    2. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+    3. Il nome sarà l’unica proprietà da inventare voi, le altre saranno tutte settate a 0.
+    4. Generare numeri random al posto degli 0 nelle proprietà punti fatti e falli subiti.
+    5. Infine, usando il destructuring, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
