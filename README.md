@@ -53,3 +53,7 @@
     3. Il nome sarà l’unica proprietà da inventare voi, le altre saranno tutte settate a 0.
     4. Generare numeri random al posto degli 0 nelle proprietà punti fatti e falli subiti.
     5. Infine, usando il destructuring, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
+
+### SNACK 5
+    Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna, varietà, peso e lunghezza.
+    Calcola il peso totale delle zucchine

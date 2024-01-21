@@ -25,8 +25,5 @@ const footballTeams = footballTeamsPreSeason.map((teamPreSeason) => {
 console.log('Lista squadre prima della stagione: ', footballTeamsPreSeason);
 console.log('Lista squadre a fine stagione: ', footballTeams);
 
-const foulsGotPerTeam = footballTeams.map(({ name, foulsDrawn }) => {
-    const team = { name: name, foulsDrawn: foulsDrawn }
-    return team;
-});
+const foulsGotPerTeam = footballTeams.map(({ name, foulsDrawn }) => ({ name, foulsDrawn }));
 console.log('Lista con nomi squdre e falli subiti:', foulsGotPerTeam);
