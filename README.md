@@ -57,3 +57,16 @@
 ### SNACK 5
     Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna, varietà, peso e lunghezza.
     Calcola il peso totale delle zucchine
+
+### SNACK 6
+    Crea un array di 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno di 15cm e più di 15cm.
+    Infine stampa separatamente quanto pesano i due gruppi di zucchine
+
+### SNACK 7
+    Scrivi una funzione che accetti una stringa come argomento e la restituista girata (es. Ciao -> oaiC)
+
+### SNACK 8
+    Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall'altro
+    es. [a,b,c], [1,2,3] --> [a,1,b,2,c,3]
+
+    
